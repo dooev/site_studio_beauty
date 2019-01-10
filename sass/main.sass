@@ -37,16 +37,23 @@ html, body
 	height: 100%
 
 body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.65
-	font-family: $default-font
-	overflow-x: hidden
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.65
+  font-family: $default-font
+  overflow-x: hidden
+  header.header
+    background-image: url(/img/top-bg.jpg)
+    min-height: 700px
+    height: 100vh
+    background-color: $dark
     
-header.header
-  background-image: url(/img/top-bg.jpg)
-  min-height: 700px
+section, header
+  position: relative
+  background-size: cover
+  background-position: center
+
 
 .img-responsive
 	display: block

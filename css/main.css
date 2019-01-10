@@ -107,9 +107,17 @@ body {
   overflow-x: hidden;
 }
 
-header.header {
+body header.header {
   background-image: url(/img/top-bg.jpg);
   min-height: 700px;
+  height: 100vh;
+  background-color: #1a1a1a;
+}
+
+section, header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
 .img-responsive {
