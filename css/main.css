@@ -114,6 +114,17 @@ body header.header {
   background-color: #1a1a1a;
 }
 
+body header.header .top-line {
+  padding-top: 40px;
+  position: absolute;
+  z-index: 1;
+}
+
+body header.header .top-line .logo img {
+  width: 360px;
+  margin-left: 45px;
+}
+
 section, header {
   position: relative;
   background-size: cover;
