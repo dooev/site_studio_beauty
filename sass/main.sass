@@ -35,7 +35,7 @@ body textarea:required:valid
 
 html, body
 	height: 100%
-
+// base style START
 body
   font-size: 16px
   min-width: 320px
@@ -43,26 +43,11 @@ body
   line-height: 1.65
   font-family: $default-font
   overflow-x: hidden
-  header.header
-    background-image: url(/img/top-bg.jpg)
-    min-height: 700px
-    height: 100vh
-    background-color: $dark
-    .top-line
-      padding-top: 40px
 
-      position: absolute
-      z-index: 1
-      .logo
-        img
-          width: 360px
-          margin-left: 45px
-    
 section, header
   position: relative
   background-size: cover
   background-position: center
-
 
 .img-responsive
 	display: block
@@ -77,4 +62,52 @@ section, header
 	color: #fff
 .accent
   color: $accent
+// base style END
+
+// header style START
+
+header.header
+  background-image: url(/img/top-bg.jpg)
+  min-height: 700px
+  height: 100vh
+  background-color: $dark
+  .top-line
+    padding-top: 40px
+    width: 100%
+    position: absolute
+    z-index: 1
+    .logo
+      img
+        width: 310px
+        margin-left: 45px
+.phone
+  position: absolute
+  right: 85px
+  top: 44px
+  a
+    color: #fff
+    font-family: firasans, sans-serif
+    font-size: 22px
+    white-space: nowrap
+  .fa
+    color: #555
+    font-size: 22px
+    margin-right: 3px
+
+.hamburger
+  position: absolute
+  right: 0
+  .hamburger-box
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+      color: #fff
+      width: 34px
+      background-color: #fff
+      border-radius: 0
+      height: 2px
+
+// header style END
+
+
+
+
 @import "media" // Всегда в конце

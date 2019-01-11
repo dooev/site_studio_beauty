@@ -40,13 +40,14 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#1a1a1a">
 <!-- фон окна браузера на мобильных END -->
 
-<!-- подключение стилей START -->
+<!-- подключение стилей и библиотек START -->
 	<link rel="stylesheet" href="libs/normalize_css/normalize.css"> 
 	<link rel="stylesheet" href="libs/fontawesome/font-awesome.min.css"> 
+	<link rel="stylesheet" href="libs/css-hamburgers/hamburgers.css"> 
 	<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css">
 	<link rel="stylesheet" href="libs/mmenu/css/jquery.mmenu.all">
 	<link rel="stylesheet" href="css/main.css">
-<!-- подключение стилей  END-->
+<!-- подключение стилей и библиотек END-->
 
 </head>
 
@@ -56,8 +57,10 @@
       <div id="my-header">
         <header class="header">
           <div class="top-line">
-            <a href="#" class="logo">
-              <img src="img/logo.png" alt="Салон «Парикмахерская на Южной»">
+            <a href="#" class="logo"><img src="img/logo.png" alt="Салон «Парикмахерская на Южной»"></a>
+            <div class="phone"><i class="fa fa-mobile"></i><a href="tel:+7 (967) 175-32-32">+7 (967) 175-32-32</a></div>
+            <a href="#my-menu" class="hamburger hamburger--arrow "> 
+              <span class="hamburger-box"><span class="hamburger-inner"></span></span>
             </a>
           </div>
         </header>
