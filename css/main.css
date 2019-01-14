@@ -453,6 +453,26 @@ html.mm-opened {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+.header__contacts {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 12.5px 0;
+  width: 100%;
+  background-color: rgba(21, 21, 21, 0.15);
+}
+
+.header__contacts .fa {
+  color: #555;
+  margin-right: 5px;
+}
+
+.header__contacts-phone {
+  font-family: firasans, sans-serif;
+  text-align: center;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
