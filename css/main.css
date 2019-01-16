@@ -203,21 +203,21 @@ section, header {
   margin-top: 20px;
 }
 
-header.header {
+.header {
   background-image: url(/img/top-bg.jpg);
   min-height: 700px;
   height: 100vh;
   background-color: #1a1a1a;
 }
 
-header.header .top-line {
+.header .top-line {
   padding-top: 40px;
   width: 100%;
   position: absolute;
   z-index: 1;
 }
 
-header.header .top-line .logo img {
+.header .top-line .logo img {
   width: 220px;
   margin-left: 45px;
   margin-top: -20px;
@@ -476,22 +476,80 @@ html.mm-opened {
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  /**/
+  .header__text .h1 {
+    font-size: 64px;
+  }
+  .header__contacts {
+    font-size: 14px;
+  }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /**/
+  .header__text .h1 {
+    font-size: 48px;
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /**/
+  .header .top-line .logo img {
+    margin-left: 15px;
+    margin-top: -14px;
+    width: 180px;
+  }
+  .header .phone a {
+    font-size: 20px;
+  }
+  .header__text .h1 {
+    font-size: 40px;
+  }
+  .header__text p span {
+    font-size: 12px;
+  }
+  .header__contacts-phone {
+    text-align-last: left;
+  }
+  .button {
+    padding: 12px 36px;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /**/
+  .col-xxs-10 {
+    width: 83.33333333%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header .top-line .logo img {
+    margin-left: 15px;
+    margin-top: -14px;
+    width: 180px;
+  }
+  .header .phone {
+    display: none;
+  }
+  .header__text .h1 {
+    margin-top: 5px;
+    font-size: 28px;
+  }
+  .header__text p span {
+    font-size: 9px;
+  }
+  .header__text strong {
+    margin-top: 14px;
+    font-size: 14px;
+  }
+  .header__text-composition p {
+    font-size: 14px;
+  }
+  .header__contacts-phone {
+    text-align-last: left;
+  }
 }
 
 /* Custom, iPhone Retina */
