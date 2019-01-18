@@ -110,7 +110,6 @@ body {
   line-height: 1.65;
   font-family: "releway", sans-serif;
   overflow-x: hidden;
-  color: #fff;
 }
 
 section, header {
@@ -208,6 +207,7 @@ section, header {
   min-height: 700px;
   height: 100vh;
   background-color: #1a1a1a;
+  color: #fff;
 }
 
 .header .top-line {
@@ -471,6 +471,18 @@ html.mm-opened {
 .header__contacts-phone {
   font-family: firasans, sans-serif;
   text-align: center;
+}
+
+.services__carousel .owl-item:nth-child(3n+1) {
+  background-color: #66C7CD;
+}
+
+.services__carousel .owl-item:nth-child(3n+2) {
+  background-color: #F86868;
+}
+
+.services__carousel .owl-item:nth-child(3n+3) {
+  background-color: #F9C869;
 }
 
 /*==========  Desktop First  ==========*/
