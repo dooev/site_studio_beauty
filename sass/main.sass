@@ -322,14 +322,39 @@ html.mm-opened
 // header style END
 
 // services style START
-.services__carousel .owl-item:nth-child(3n+1)
-  background-color: #66C7CD
+.services
+  &__carousel
+    background-color: $dark
+    .owl-item:nth-child(3n+1)
+      background-color: #66C7CD
+    .owl-item:nth-child(3n+2)
+      background-color: #F86868
+    .owl-item:nth-child(3n+3)
+      background-color: #F9C869
+  &__item
+    color: #fff
+    font-size: 18px
+    font-weight: 300
+    position: relative
+    display: flex
+    flex-direction: column-reverse
+  
+    &-img
+      background-size: cover
+      background-position: center
+      opacity: .7
+      transition: opacity .5s
+      &:hover
+        opacity: 1
+    &-text
+      padding: 50px 10%
+  .owl-item
+    backface-visibility: inherit
+    &:nth-child(2n+2)
+      .services__item
+        flex-direction: column
 
-.services__carousel .owl-item:nth-child(3n+2)
-  background-color: #F86868
 
-.services__carousel .owl-item:nth-child(3n+3)
-  background-color: #F9C869
 // services style END
 
 

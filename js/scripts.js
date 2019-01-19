@@ -34,5 +34,13 @@ $(function(){
     }
   });
 
+  function servicesCarousel() {
+    $('.services__carousel').each(function () {
+      var ths = $(this),
+          thsHei = ths.find('.services__item-text').outerHeight();
+          ths.find('.services__item-img').css('min-height', thsHei);
+    })
+  };
+  servicesCarousel();
 
 });
