@@ -111,6 +111,18 @@ section, header
       opacity: .32
 .button
   margin-top: 20px
+  &-white
+    background-color: #fff
+    color: #444444
+    &::after
+      background-color: rgba(#000, .9)
+    &:active, &:focus, &:hover 
+      background-color: #fff
+      color: #444444
+    &:hover 
+      &::after
+        background-color: rgba(#000, .1)
+
 // заготовка для кнопки
 
 
@@ -221,7 +233,6 @@ html.mm-opened
 
   // текст посередине START
 .header__text
-  display: flex
   height: 100%
   position: relative
   top: 0
@@ -348,6 +359,37 @@ html.mm-opened
         opacity: 1
     &-text
       padding: 50px 10%
+      &-composition
+        margin: auto
+        text-align: center
+        width: 100%
+        .h3
+          font-weight: 800
+          font-size: 24px
+          margin-top: 0
+          margin-bottom: 20px
+          span
+            font-size: 18px
+            font-weight: 300
+            display: block
+    &-list
+      margin: 0
+      padding: 0
+      list-style-type: none
+      margin-bottom: 25px
+      text-align: left
+      li
+        padding: 9px
+        border-bottom: 1px solid rgba(#000, .12)
+        &:last-child
+          border-bottom: none
+      strong
+        float: right
+        font-family: firasans, sans-serif
+        color: #4a4a4a
+      .fa
+        font-size: 14px
+        margin-left: 5px
   .owl-item
     backface-visibility: inherit
     &:nth-child(2n+2)

@@ -1,6 +1,6 @@
 $(function(){
   
-  //mmenu
+  //mmenu START
   $('#my-menu').mmenu({
     extensions: [ 'widescreen', 'theme-black', 'effect-menu-slide', 'pagedim-black'],
     navbar: { title: '<img src="img/logo.png" alt="Салон «Парикмахерская на Южной»"></a>'},
@@ -13,10 +13,17 @@ $(function(){
   }).bind("closed", function(){
     $('.hamburger').removeClass('is-active');
   });
-  
-  // services__carousel
+  //mmenu END
+   
+  // services__carousel START
+  $('.services__carousel').on('initialized.owl.carousel', function(){
+      setTimeout(function(){
+        servicesCarousel()
+      }, 100);
+  })
   $('.services__carousel').owlCarousel({
     loop: true,
+    dots: false,
     nav: true,
     smartSpeed: 700,
     navText: ['<i class="fa fa-angle-double-left"> <i class="fa fa-angle-double-right">'],
@@ -41,6 +48,12 @@ $(function(){
           ths.find('.services__item-img').css('min-height', thsHei);
     })
   };
-  servicesCarousel();
+
+  // ресайз
+  function onResize() {
+      // equalheights для одинаковой высоты контента
+    $('.services__item-text').equalHeights();
+  } onResize();
+  // services__carousel END
 
 });
