@@ -60,7 +60,7 @@ $('select').selectize({
 });
 // select выберите услугу  END
 
-	//E-mail Ajax Send
+	//E-mail Ajax Send START
 	$("form.callback").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
@@ -77,4 +77,16 @@ $('select').selectize({
 		});
 		return false;
 	});
+	//E-mail Ajax Send END
+
+
+	//s-review owl-carousel START
+  $('.reviews').owlCarousel({
+    loop: true,
+    items: 1,
+    smartSpeed: 700,
+    nav: true
+  });
+	//s-review owl-carousel END
+
 });

@@ -725,6 +725,62 @@ html.mm-opened {
   background-image: url(/img/s-review/bg.jpg);
 }
 
+.s-review .reviews {
+  text-align: center;
+}
+
+.s-review .quotes {
+  position: absolute;
+  width: 100%;
+}
+
+.s-review .quotes::before, .s-review .quotes::after {
+  content: ',,';
+  position: absolute;
+  font-size: 56px;
+  color: #F9C869;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  line-height: 0;
+}
+
+.s-review .quotes::before {
+  top: 162px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  left: -60px;
+}
+
+.s-review .quotes::after {
+  right: -25px;
+  top: 124px;
+}
+
+.s-review .owl-dots {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.s-review .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 10em;
+  display: inline-block;
+  margin: 5px;
+  -webkit-transition: background-color .5s ease, -webkit-transform .5s;
+  transition: background-color .5s ease, -webkit-transform .5s;
+  transition: background-color .5s ease, transform .5s;
+  transition: background-color .5s ease, transform .5s, -webkit-transform .5s;
+}
+
+.s-review .owl-dots .owl-dot.active {
+  background-color: #F9C869;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
 .accent {
   color: #F9C869;
 }

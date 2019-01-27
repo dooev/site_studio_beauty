@@ -485,6 +485,43 @@ html.mm-opened
 // s-review style START
 .s-review
   background-image: url(/img/s-review/bg.jpg)
+  .reviews
+    text-align: center
+  .quotes
+    position: absolute
+    width: 100%
+    &::before, &::after
+      content: ',,'
+      position: absolute
+      font-size: 56px
+      color: $accent
+      font-family: 'Times New Roman', serif
+      font-weight: bold
+      line-height: 0
+    &::before
+      top: 162px
+      transform: rotate(180deg)
+      left: -60px
+    &::after
+      right: -25px
+      top: 124px
+  .owl-dots
+    width: 100%
+    text-align: center
+    margin-top: 60px
+    .owl-dot
+      width: 10px
+      height: 10px
+      background-color: #ffffff
+      border-radius: 10em
+      display: inline-block
+      margin: 5px
+      transition: background-color .5s ease, transform .5s 
+      &.active
+        background-color: $accent
+        transform: scale(1.4)
+
+
 // s-review style END
 
 // all section .s
