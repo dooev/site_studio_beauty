@@ -49,6 +49,7 @@
 	<link rel="stylesheet" href="libs/owl.carousel/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="libs/owl.carousel/assets/owl.theme.default.min.css">
 	<link rel="stylesheet" href="libs/fotorama/fotorama.css">
+  <link rel="stylesheet" href="libs/selectize/css/selectize.css">
 	<link rel="stylesheet" href="css/main.css">
 <!-- подключение стилей и библиотек END-->
 
@@ -212,19 +213,54 @@
           <div class="container">
             <div class="col-md-5">
               <h2 class="h2">королевский <span class="accent">салон</span></h2>
-            <p><strong>Парикмахерская на Южной</strong> встречает своих посетителей современным дизайном и атмосферой уюта: огромное светлое пространство, изящная мебель, мягкие бархатные кресла. Это отличное место для того, чтобы посвятить пару часов только себе!</p>
-            <p>Дамам здесь предложат экстраординарный ассортимент косметологических процедур и качественный нейл-сервис, а мужчин порадуют услугами стилистов и уходом за лицом.</p>
+            <p><strong>Парикмахерская на Южной</strong> встречает своих посетителей современным дизайном и атмосферой уюта: светлое пространство, изящная мебель, мягкие бархатные кресла. Это отличное место для того, чтобы посвятить пару часов только себе!</p>
+            <p>Дамам здесь предложат экстраординарный ассортимент косметологических процедур и качественный сервис, а мужчин порадуют услугами стилистов и уходом за лицом.</p>
             </div>
             <div class="col-md-7">
               <div class="section-gallry fotorama" data-nav="thumbs" data-thumbwidth="106" data-thumbheight="60" data-thumbborderwidth="5" data-thumbmargin='10'>
-                <img src="img/inside/4.jpg" alt="Фото Салона Красоты 'Парикмахерская на Южной'">
-                <img src="img/inside/5.jpg" alt="Фото Салона Красоты 'Парикмахерская на Южной'">
-                <img src="img/inside/1.jpg" alt="Фото Салона Красоты 'Парикмахерская на Южной'">
-                <img src="img/inside/2.jpg" alt="Фото Салона Красоты 'Парикмахерская на Южной'">
-                <img src="img/inside/enter.jpg" alt="Фото Салона Красоты 'Парикмахерская на Южной'">
+                <img src="img/s-king/4.jpg" alt="Фото Салона Красоты 'Парикмахерская на Южной'">
+                <img src="img/s-king//5.jpg" alt="Фото Салона Красоты 'Парикмахерская на Южной'">
+                <img src="img/s-king//1.jpg" alt="Фото Салона Красоты 'Парикмахерская на Южной'">
+                <img src="img/s-king//2.jpg" alt="Фото Салона Красоты 'Парикмахерская на Южной'">
+                <img src="img/s-king//enter.jpg" alt="Фото Салона Красоты 'Парикмахерская на Южной'">
               </div>
             </div>
           </div>
+        </section>
+        <!-- s-king -->
+        <section class="s-call">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-6">
+                <form class='callback'>
+                  <div class="success">
+                    <span>Спасибо за заявку!</span>
+                  </div>
+                  <!-- success -->
+                  <!-- Hidden Required Fields -->
+                  <input type="hidden" name="project_name" value="Парикмахерская на южной">
+                  <input type="hidden" name="admin_email" value="admin@mail.com">
+                  <input type="hidden" name="form_subject" value="Заявка с сайта Парикмахерской">
+                  <input type="hidden" name="Страница" value="">
+                  <!-- END Hidden Required Fields -->
+                  <span class="h2">Оставить заявку</span>
+                  <p>Оставьте заявку и мы перезвоним вам в течение 15 минут.</p>
+                  <input type="text" name="Имя" placeholder="Ваше иия..." required>
+                  <input type="text" name="Телефон" placeholder="Ваш телефон..." required>
+                  <select name="Услуга">
+                    <option>Парикмахерский сервис</option>
+                    <option>Косметологический сервис</option>
+                    <option>Маникюрный сервис</option>
+                    <option>Массаж</option>
+                  </select>
+                  <button class="button button-white">Отправить</button>
+                </form>
+              </div>
+              <!-- col-sm-6 -->
+            </div>
+            <!-- row -->
+          </div>
+          <!-- container -->
         </section>
       </div>
       <!-- my-content -->
@@ -236,6 +272,7 @@
 	<script src="libs/equalHeights/equalheights.js"></script>
 	<script src="libs/owl.carousel/owl.carousel.min.js"></script>
 	<script src="libs/fotorama/fotorama.js"></script>
+  <script src="libs/selectize/js/standalone/selectize.min.js"></script>
 	<script src="js/scripts.js"></script>
 
 </body>

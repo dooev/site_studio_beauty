@@ -622,6 +622,10 @@ html.mm-opened {
   background-image: url(/img/inside/3.jpg);
 }
 
+.s-king p {
+  font-size: 18px;
+}
+
 .fotorama__nav-wrap {
   position: absolute;
   bottom: 15px;
@@ -643,16 +647,18 @@ html.mm-opened {
   border-color: #fff;
 }
 
+.s-call {
+  background-image: url(/img/s-call/bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .accent {
   color: #F9C869;
 }
 
 .s-king, .s-review, .s-partners {
   padding: 5% 0;
-}
-
-.s-king p {
-  font-size: 18px;
 }
 
 .section-overley::before {

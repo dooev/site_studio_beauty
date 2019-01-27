@@ -55,5 +55,8 @@ $(function(){
     $('.services__item-text').equalHeights();
   } onResize();
   // services__carousel END
-
+// select выберите услугу  START
+$('select').selectize({
+});
+// select выберите услугу  END
 });
