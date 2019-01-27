@@ -687,28 +687,28 @@ html.mm-opened {
           filter: blur(5px);
 }
 
-.s-call input, .s-call textarea, .s-call select {
+.s-call input, .s-call textarea, .s-call select, .s-call .selectize-control .selectize-input, .s-call .selectize-control.single .selectize-input.input-active {
   color: #ffffff;
   width: 100%;
   margin-top: 17px;
 }
 
-.s-call input::-webkit-input-placeholder, .s-call textarea::-webkit-input-placeholder, .s-call select::-webkit-input-placeholder {
+.s-call input::-webkit-input-placeholder, .s-call textarea::-webkit-input-placeholder, .s-call select::-webkit-input-placeholder, .s-call .selectize-control .selectize-input::-webkit-input-placeholder, .s-call .selectize-control.single .selectize-input.input-active::-webkit-input-placeholder {
   color: #ffffff;
   opacity: 1;
 }
 
-.s-call input:-ms-input-placeholder, .s-call textarea:-ms-input-placeholder, .s-call select:-ms-input-placeholder {
+.s-call input:-ms-input-placeholder, .s-call textarea:-ms-input-placeholder, .s-call select:-ms-input-placeholder, .s-call .selectize-control .selectize-input:-ms-input-placeholder, .s-call .selectize-control.single .selectize-input.input-active:-ms-input-placeholder {
   color: #ffffff;
   opacity: 1;
 }
 
-.s-call input::-ms-input-placeholder, .s-call textarea::-ms-input-placeholder, .s-call select::-ms-input-placeholder {
+.s-call input::-ms-input-placeholder, .s-call textarea::-ms-input-placeholder, .s-call select::-ms-input-placeholder, .s-call .selectize-control .selectize-input::-ms-input-placeholder, .s-call .selectize-control.single .selectize-input.input-active::-ms-input-placeholder {
   color: #ffffff;
   opacity: 1;
 }
 
-.s-call input::placeholder, .s-call textarea::placeholder, .s-call select::placeholder {
+.s-call input::placeholder, .s-call textarea::placeholder, .s-call select::placeholder, .s-call .selectize-control .selectize-input::placeholder, .s-call .selectize-control.single .selectize-input.input-active::placeholder {
   color: #ffffff;
   opacity: 1;
 }
@@ -750,7 +750,8 @@ section .h2 {
   font-weight: 800;
 }
 
-input, textarea, select {
+input, textarea, select, .selectize-control .selectize-input,
+.selectize-control.single .selectize-input.input-active {
   background-color: transparent;
   border: rgba(0, 0, 0, 0.1) 1px solid;
   border-bottom: rgba(0, 0, 0, 0.1) 2px solid;
@@ -760,6 +761,50 @@ input, textarea, select {
   display: inline-block;
   font-size: 16px;
   color: #333333;
+}
+
+.selectize-control .selectize-input {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  overflow: inherit;
+  line-height: inherit;
+  text-align: left;
+}
+
+.selectize-control .selectize-input input {
+  font-size: 16px;
+}
+
+.selectize-control .selectize-input.dropdown-active::before {
+  background-color: transparent;
+}
+
+.selectize-control.single .selectize-input::after, .selectize-control.single.dropdown-active::after {
+  border: none;
+  content: '\f107';
+  font-family: fontawesome;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+
+.selectize-control.single .selectize-input.dropdown-active::after, .selectize-control.single.dropdown-active.dropdown-active::after {
+  content: '\f106';
+}
+
+.selectize-control.single .selectize-dropdown {
+  font-size: 15px;
+  border: none;
+  border-radius: 0;
+  text-align: left;
+}
+
+.selectize-control.single .selectize-dropdown-content .option {
+  padding: 10px 22px;
+}
+
+.selectize-control.single .selectize-dropdown-content .option.active:hover {
+  background-color: #fce3b3;
 }
 
 select {
