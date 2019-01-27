@@ -654,6 +654,12 @@ html.mm-opened {
   height: 100%;
 }
 
+.s-call .callback {
+  padding: 25% 0;
+  color: #ffffff;
+  position: relative;
+}
+
 .s-call .success {
   display: none;
   position: absolute;
@@ -744,12 +750,6 @@ section .h2 {
   font-weight: 800;
 }
 
-.callback {
-  padding: 25% 0;
-  color: #ffffff;
-  position: relative;
-}
-
 input, textarea, select {
   background-color: transparent;
   border: rgba(0, 0, 0, 0.1) 1px solid;
@@ -787,10 +787,20 @@ select {
   padding: 7% 0;
 }
 
+.s-call {
+  background-size: cover;
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .header__text .h1 {
     font-size: 48px;
+  }
+  .s-call::before {
+    width: 100%;
+  }
+  .s-call .callback {
+    padding: 12% 0;
   }
 }
 
