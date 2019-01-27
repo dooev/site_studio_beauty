@@ -357,7 +357,7 @@ html.mm-opened {
 .header__text {
   height: 100%;
   position: relative;
-  top: 0;
+  top: 25%;
 }
 
 .header__text-center {
@@ -593,6 +593,89 @@ html.mm-opened {
           flex-direction: column;
 }
 
+.services .owl-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.services .owl-nav > div {
+  width: 64px;
+  height: 64px;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  position: absolute;
+  text-align: center;
+  line-height: 64px;
+  font-size: 26px;
+}
+
+.services .owl-nav > div.owl-prev {
+  left: 0;
+}
+
+.services .owl-nav > div.owl-next {
+  right: 0;
+}
+
+.s-king {
+  background-image: url(/img/inside/3.jpg);
+}
+
+.fotorama__nav-wrap {
+  position: absolute;
+  bottom: 15px;
+  padding: 0 30px;
+  width: 100%;
+}
+
+.fotorama__nav::before, .fotorama__nav::after {
+  display: none;
+}
+
+.fotorama__thumb {
+  border: 5px #3d3d3d solid;
+  -webkit-transition: border-color .5s;
+  transition: border-color .5s;
+}
+
+.fotorama__thumb-border {
+  border-color: #fff;
+}
+
+.accent {
+  color: #F9C869;
+}
+
+.s-king, .s-review, .s-partners {
+  padding: 5% 0;
+}
+
+.s-king p {
+  font-size: 18px;
+}
+
+.section-overley::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3d3c3c;
+  opacity: .9;
+}
+
+section.inverse {
+  color: #fff;
+  background-color: #1a1a1a;
+}
+
+section .h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -608,6 +691,10 @@ html.mm-opened {
   .header__contacts {
     font-size: 14px;
   }
+}
+
+.s-king, .s-review, .s-partners {
+  padding: 7% 0;
 }
 
 /* Medium Devices, Desktops */

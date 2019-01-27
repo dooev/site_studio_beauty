@@ -235,7 +235,7 @@ html.mm-opened
 .header__text
   height: 100%
   position: relative
-  top: 0
+  top: 25%
   &-center
     margin: auto
   &-composition
@@ -395,9 +395,76 @@ html.mm-opened
     &:nth-child(2n+2)
       .services__item
         flex-direction: column
+  .owl-nav
+    position: absolute
+    top: 0
+    width: 100%
+    > div
+      width: 64px
+      height: 64px
+      background-color: #ffffff
+      color: $dark
+      position: absolute
+      text-align: center
+      line-height: 64px
+      font-size: 26px
+      &.owl-prev
+        left: 0
+      &.owl-next
+        right: 0
 
 
 // services style END
+
+// s-king style START
+.s-king
+  background-image: url(/img/inside/3.jpg)
+
+.fotorama
+  &__nav
+    &-wrap
+      position: absolute
+      bottom: 15px
+      padding: 0 30px
+      width: 100%
+    &::before, &::after
+      display: none
+  &__thumb
+    border: 5px #3d3d3d solid
+    transition: border-color .5s
+    &-border
+      border-color: #fff
+
+// s-king style END
+
+// all section .s
+.accent
+  color: $accent
+.s
+  &-king, &-review, &-partners
+    padding: 5% 0
+  &-king
+    p
+      font-size: 18px
+
+.section-overley
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $over
+    opacity: .9
+section
+  &.inverse
+    color: #fff
+    background-color: $dark
+  .h2
+    font-size: 30px
+    font-weight: 800
+
 
 
 

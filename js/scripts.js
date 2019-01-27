@@ -26,7 +26,7 @@ $(function(){
     dots: false,
     nav: true,
     smartSpeed: 700,
-    navText: ['<i class="fa fa-angle-double-left"> <i class="fa fa-angle-double-right">'],
+    navText: ['<i class="fa fa-angle-double-left">', '<i class="fa fa-angle-double-right">'],
     responsiveClass: true,
     responsive: {
       0: {
