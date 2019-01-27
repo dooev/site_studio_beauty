@@ -56,7 +56,7 @@ $(function(){
   } onResize();
   // services__carousel END
 // select выберите услугу  START
-$('select').selectize({
-});
+// $('select').selectize({
+// });
 // select выберите услугу  END
 });

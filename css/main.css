@@ -84,16 +84,6 @@
   opacity: 1;
 }
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  color: #666;
-}
-
-body input:required:valid,
-body textarea:required:valid {
-  color: #666;
-}
-
 html, body {
   height: 100%;
 }
@@ -619,7 +609,7 @@ html.mm-opened {
 }
 
 .s-king {
-  background-image: url(/img/inside/3.jpg);
+  background-image: url(/img/s-king/3.jpg);
 }
 
 .s-king p {
@@ -651,6 +641,80 @@ html.mm-opened {
   background-image: url(/img/s-call/bg.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: 10%;
+}
+
+.s-call::before {
+  content: "";
+  width: 50%;
+  background-color: #F9C869;
+  opacity: .9;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.s-call .success {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+}
+
+.s-call .success span {
+  margin: auto;
+}
+
+.s-call .success ~ * {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.s-call .success.active ~ * {
+  opacity: .5;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.s-call input, .s-call textarea, .s-call select {
+  color: #ffffff;
+  width: 100%;
+  margin-top: 17px;
+}
+
+.s-call input::-webkit-input-placeholder, .s-call textarea::-webkit-input-placeholder, .s-call select::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.s-call input:-ms-input-placeholder, .s-call textarea:-ms-input-placeholder, .s-call select:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.s-call input::-ms-input-placeholder, .s-call textarea::-ms-input-placeholder, .s-call select::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.s-call input::placeholder, .s-call textarea::placeholder, .s-call select::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.s-call option {
+  color: #333333;
+}
+
+.s-call button {
+  margin-top: 40px;
 }
 
 .accent {
@@ -669,7 +733,7 @@ html.mm-opened {
   width: 100%;
   height: 100%;
   background-color: #3d3c3c;
-  opacity: .9;
+  opacity: .92;
 }
 
 section.inverse {
@@ -680,6 +744,28 @@ section.inverse {
 section .h2 {
   font-size: 30px;
   font-weight: 800;
+}
+
+.callback {
+  padding: 25% 0;
+  color: #ffffff;
+  position: relative;
+}
+
+input, textarea, select {
+  background-color: transparent;
+  border: rgba(0, 0, 0, 0.1) 1px solid;
+  border-bottom: rgba(0, 0, 0, 0.1) 2px solid;
+  border-radius: 2px;
+  padding: 8px 20px;
+  outline: none;
+  display: inline-block;
+  font-size: 16px;
+  color: #333333;
+}
+
+select {
+  padding: 10px 22px;
 }
 
 /*==========  Desktop First  ==========*/
