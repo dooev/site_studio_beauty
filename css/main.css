@@ -721,6 +721,10 @@ html.mm-opened {
   margin-top: 40px;
 }
 
+.s-review {
+  background-image: url(/img/s-review/bg.jpg);
+}
+
 .accent {
   color: #F9C869;
 }
@@ -729,7 +733,7 @@ html.mm-opened {
   padding: 5% 0;
 }
 
-.section-overley::before {
+.section-overlay::before {
   content: '';
   position: absolute;
   top: 0;
