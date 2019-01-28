@@ -121,4 +121,9 @@ $('select').selectize({
     $('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
   })
   // button UP END
+
+// preloader
+$(window).on('load', function(){
+  $('.preloader').delay(1000).fadeOut('slow');
+})
 });
