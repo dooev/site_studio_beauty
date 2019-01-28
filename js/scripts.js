@@ -85,7 +85,8 @@ $('select').selectize({
     loop: true,
     items: 1,
     smartSpeed: 700,
-    nav: true
+    nav: false,
+    autoHeight: true
   });
 	//s-review owl-carousel END
 
