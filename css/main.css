@@ -317,8 +317,8 @@ html.mm-opened {
 .mm-listview > li > a {
   padding-left: 14%;
   padding-right: 14%;
-  -webkit-transition: .25s;
-  transition: .25s;
+  -webkit-transition: .25s ease;
+  transition: .25s ease;
   top: 8px;
 }
 
@@ -336,8 +336,8 @@ html.mm-opened {
   margin-right: 8px;
   font-size: 12px;
   color: #ffffff;
-  -webkit-transition: color .25s;
-  transition: color .25s;
+  -webkit-transition: color .25s ease;
+  transition: color .25s ease;
 }
 
 .hamburger-box {
@@ -450,8 +450,8 @@ html.mm-opened {
   text-align: center;
   margin: 18px 0;
   line-height: 38px;
-  -webkit-transition: background-color .25s;
-  transition: background-color .25s;
+  -webkit-transition: background-color .25s ease;
+  transition: background-color .25s ease;
 }
 
 .social a:hover {
@@ -512,8 +512,8 @@ html.mm-opened {
   background-size: cover;
   background-position: center;
   opacity: .7;
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
 }
 
 .services__item-img:hover {
@@ -629,8 +629,8 @@ html.mm-opened {
 
 .fotorama__thumb {
   border: 5px #3d3d3d solid;
-  -webkit-transition: border-color .5s;
-  transition: border-color .5s;
+  -webkit-transition: border-color .5s ease;
+  transition: border-color .5s ease;
 }
 
 .fotorama__thumb-border {
@@ -769,10 +769,10 @@ html.mm-opened {
   border-radius: 10em;
   display: inline-block;
   margin: 5px;
-  -webkit-transition: background-color .5s ease, -webkit-transform .5s;
-  transition: background-color .5s ease, -webkit-transform .5s;
-  transition: background-color .5s ease, transform .5s;
-  transition: background-color .5s ease, transform .5s, -webkit-transform .5s;
+  -webkit-transition: background-color .5s ease, -webkit-transform .5s ease;
+  transition: background-color .5s ease, -webkit-transform .5s ease;
+  transition: background-color .5s ease, transform .5s ease;
+  transition: background-color .5s ease, transform .5s ease, -webkit-transform .5s ease;
 }
 
 .s-review .owl-dots .owl-dot.active {
@@ -830,8 +830,8 @@ html.mm-opened {
   top: 50px;
   color: #999999;
   font-size: 30px;
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
   padding: 0 10px;
 }
 
@@ -845,6 +845,135 @@ html.mm-opened {
 
 .partners .owl-nav > div.owl-next {
   right: -60px;
+}
+
+.footer {
+  background-color: #242424;
+  font-size: 14px;
+  color: #fff;
+  padding: 3% 0;
+}
+
+.footer .footer-column {
+  margin: 15px 0;
+}
+
+.footer__logo {
+  width: 175px;
+}
+
+.footer__logo + p {
+  color: #666666;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 14px;
+  padding: 0;
+}
+
+.footer__social {
+  margin-top: 40px;
+}
+
+.footer__social .social li {
+  display: inline-block;
+  margin: 3px;
+}
+
+.footer__social .social li a {
+  color: #ababab;
+  margin-bottom: 0;
+  -webkit-transition: color .5s ease, background .5s ease;
+  transition: color .5s ease, background .5s ease;
+}
+
+.footer__social .social li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer__menu ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.footer__menu ul li.active a {
+  color: #F9C869;
+}
+
+.footer__menu ul li.active a::before {
+  color: #F9C869;
+}
+
+.footer__menu ul a {
+  color: #979797;
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+  display: inline-block;
+  padding: 4px 0;
+  text-decoration: underline;
+  padding-left: 20px;
+  position: relative;
+}
+
+.footer__menu ul a:hover, .footer__menu ul a:focus {
+  color: #F9C869;
+}
+
+.footer__menu ul a:hover::before, .footer__menu ul a:focus::before {
+  color: #F9C869;
+}
+
+.footer__menu ul a::before {
+  position: absolute;
+  font-family: fontawesome;
+  content: '\f219';
+  left: 0;
+  font-size: 12px;
+  color: #ffffff;
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
+  top: 6px;
+  margin-right: 12px;
+}
+
+.footer__address {
+  position: relative;
+  font-size: 15px;
+  padding-left: 24px;
+  margin: 0 0 20px;
+}
+
+.footer__address .fa {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-size: 18px;
+  color: #555555;
+}
+
+.footer__address .footer-phone {
+  font-size: 26px;
+  font-family: firasans, sans-serif;
+  padding-top: 10px;
+  display: block;
+  white-space: nowrap;
+}
+
+.footer__address .footer-phone .fa {
+  top: 19px;
+  font-size: 22px;
+  left: 3px;
+}
+
+.footer .map {
+  max-height: 250px;
+  opacity: .7;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
+
+.footer .map:hover {
+  opacity: 1;
 }
 
 .accent {
@@ -967,6 +1096,35 @@ select {
   padding: 10px 22px;
 }
 
+.top {
+  position: fixed;
+  bottom: 25px;
+  background-color: #e0e0e0;
+  border-radius: 10em;
+  color: #666;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  right: -100px;
+  z-index: 12;
+  opacity: .5;
+}
+
+.top:hover {
+  color: #fff;
+  background-color: #f9c766;
+  opacity: 1;
+}
+
+.top.active {
+  right: 30px;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1003,6 +1161,16 @@ select {
   .s-call .callback {
     padding: 12% 0;
   }
+  .footer__address .footer__phone {
+    font-size: 20px;
+    padding-top: 0;
+  }
+  .footer__address .footer__phone .fa {
+    top: 9px;
+  }
+  .footer__social {
+    margin-top: 25px;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -1035,6 +1203,15 @@ select {
   }
   .partners .owl-nav > div.owl-next {
     right: 0px;
+  }
+  .footer__menu {
+    padding-left: 23px;
+  }
+  .footer__social {
+    margin-top: 0;
+  }
+  .footer__social a {
+    margin-top: 0;
   }
 }
 
