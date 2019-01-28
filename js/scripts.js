@@ -88,6 +88,24 @@ $('select').selectize({
     nav: false,
     autoHeight: true
   });
-	//s-review owl-carousel END
+	//s-review owl-carousel END\
 
+  
+	//s-partners owl-carousel START
+  $('.partners').owlCarousel({
+    loop: true,
+    smartSpeed: 700,
+    nav: false,
+    dots: false,
+    nav: true,
+    navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">'],
+    responsiveClass: true,
+    responsive: {
+      0: { items:1},
+      768: {items:2},
+      992: { items: 3},
+      1200: {items: 4}
+    }
+  });
+	//s-partners owl-carousel END
 });
