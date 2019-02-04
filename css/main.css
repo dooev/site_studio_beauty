@@ -54,6 +54,37 @@
   src: url("../fonts/FiraSansRegular/FiraSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSansRegular/FiraSansRegular.woff") format("woff"), url("../fonts/FiraSansRegular/FiraSansRegular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Chel";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Cheltenham-BlackItalicCY.eot");
+  src: url("../fonts/Cheltenham-BlackItalicCY.eot?#iefix") format("embedded-opentype"), url("../fonts/Cheltenham-BlackItalicCY.woff") format("woff"), url("../fonts/Cheltenham-BlackItalicCY.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Varga";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Varga.eot");
+  src: url("../fonts/Varga.eot?#iefix") format("embedded-opentype"), url("../fonts/Varga.woff") format("woff"), url("../fonts/Varga.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Flash";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Flash_CY.eot");
+  src: url("../fonts/Flash_CY.eot?#iefix") format("embedded-opentype"), url("../fonts/Flash_CY.woff") format("woff"), url("../fonts/Flash_CY.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Chel";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Cheltenham-BlackItalicCY.otf");
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -118,6 +149,10 @@ section, header {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
 ::-moz-selection {
   background-color: #F9C869;
   color: #fff;
@@ -130,6 +165,14 @@ section, header {
 
 .accent {
   color: #F9C869;
+}
+
+.logo-font {
+  font-family: Chel;
+  font-size: 25px;
+  font-style: none;
+  font-weight: normal;
+  display: inline;
 }
 
 .button {
@@ -225,10 +268,26 @@ section, header {
   z-index: 1;
 }
 
-.header .top-line .logo img {
-  width: 220px;
-  margin-left: 45px;
-  margin-top: -20px;
+.header .fa {
+  opacity: .3;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.header .logo-font {
+  opacity: .8;
+}
+
+.logo-wrapper {
+  margin-top: -100px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .phone {
@@ -721,6 +780,12 @@ html.mm-opened {
   margin-top: 40px;
 }
 
+.s-call .logo img {
+  width: 200px;
+  -webkit-filter: invert(40%);
+          filter: invert(40%);
+}
+
 .s-review {
   background-image: url(/img/s-review/bg.jpg);
 }
@@ -852,6 +917,12 @@ html.mm-opened {
   font-size: 14px;
   color: #fff;
   padding: 3% 0;
+}
+
+.footer .logo-font {
+  font-size: 20px;
+  margin-bottom: -15px;
+  display: block;
 }
 
 .footer .footer-column {
@@ -1252,10 +1323,13 @@ select {
   .header__text .h1 {
     font-size: 48px;
   }
-  .s-call::before {
+  .header__text-composition {
+    margin-top: 75px;
+  }
+  .header::before {
     width: 100%;
   }
-  .s-call .callback {
+  .header .callback {
     padding: 12% 0;
   }
   .footer__address .footer__phone {
@@ -1314,6 +1388,9 @@ select {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .header__text-composition {
+    margin-top: 5px;
+  }
   .col-xxs-10 {
     width: 83.33333333%;
     float: left;

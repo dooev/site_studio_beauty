@@ -24,7 +24,11 @@
     &__text
       .h1
         font-size: 48px
-  .s-call
+      &-composition
+        margin-top: 75px
+    // .logo-font
+      // margin-top: 0
+    .s-call
     &::before
       width: 100%
     .callback
@@ -79,9 +83,16 @@
     a
       margin-top: 0
 
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+  .header
+    &__text
+      &-composition
+        margin-top: 5px
+  // .logo-font
+    // margin-top: -50px
+    // display: block
+    // font-size: 22px
   .col-xxs-10
     width: 83.33333333%
     float: left

@@ -1,5 +1,10 @@
 @import "fonts"
 @import "vars"
+@font-face
+  font-family: "Chel"
+  font-weight: normal
+  font-style: normal
+  src: url("../fonts/Cheltenham-BlackItalicCY.otf")
 
 *
 	-webkit-box-sizing: border-box
@@ -54,11 +59,21 @@ section, header
 .text-center
 	text-align: center
 
+.text-left
+	text-align: left
+
 ::selection
 	background-color: $accent
 	color: #fff
 .accent
   color: $accent
+
+.logo-font
+  font-family: Chel
+  font-size: 25px
+  font-style: none
+  font-weight: normal
+  display: inline
 // base style END
 
 // заготовка для кнопки
@@ -132,11 +147,19 @@ section, header
     width: 100%
     position: absolute
     z-index: 1
-    .logo
-      img
-        width: 220px
-        margin-left: 45px
-        margin-top: -20px
+  .fa
+    opacity: .3
+    margin-right: 10px
+    margin-left: 10px
+  .logo-font
+    opacity: .8
+
+.logo-wrapper
+  // margin-left: 50px
+  margin-top: -100px
+  margin-bottom: 20px
+  display: flex
+  flex-direction: column
 .phone
   position: absolute
   right: 85px
@@ -478,7 +501,10 @@ html.mm-opened
     color: #333333
   button
     margin-top: 40px
-  
+  .logo
+    img
+      width: 200px
+      filter: invert(40%)
 // s-call style END
 
 
@@ -572,6 +598,10 @@ html.mm-opened
   font-size: 14px
   color: #fff
   padding: 3% 0
+  .logo-font
+    font-size: 20px
+    margin-bottom: -15px
+    display: block
   .footer-column
     margin: 15px 0
   &__logo
