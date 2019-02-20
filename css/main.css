@@ -167,6 +167,10 @@ section, header {
   color: #F9C869;
 }
 
+.gray {
+  color: #696969;
+}
+
 .logo-font {
   font-family: Chel;
   font-size: 25px;

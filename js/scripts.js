@@ -3,7 +3,7 @@ $(function(){
   //mmenu START
   $('#my-menu').mmenu({
     extensions: [ 'widescreen', 'theme-black', 'effect-menu-slide', 'pagedim-black'],
-    navbar: { title: '<img src="img/logo.png" alt="Салон «Парикмахерская на Южной»"></a>'},
+    navbar: { title: 'Салон «Парикмахерская на Южной»'},
     offCanvas: { position: 'right'}
   });
 
