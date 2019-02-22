@@ -413,6 +413,12 @@ html.mm-opened
     &:nth-child(2n+2)
       .services__item
         flex-direction: column
+  .logo-font
+    color: rgba(0,0,0,.2)
+    font-size: 20px
+  .accent
+    color: rgba(0,0,0,.2)
+    font-size: 20px
   .owl-nav
     position: absolute
     top: 0
@@ -860,6 +866,51 @@ select
     @include opacity(100)
     transform: scale(1)
 
-
-
+// страница цен
+.price-page
+  header
+    height: auto
+    background-color: rgb(73,73,73)
+    background: -moz-linear-gradient(90deg, rgba(73,73,73,1) 0%, rgba(0,0,0,1) 50%, rgba(73,73,73,1) 100%)
+    background: -webkit-linear-gradient(90deg, rgba(73,73,73,1) 0%, rgba(0,0,0,1) 50%, rgba(73,73,73,1) 100%)
+    background: linear-gradient(90deg, rgba(73,73,73,1) 0%, rgba(0,0,0,1) 50%, rgba(73,73,73,1) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#494949",endColorstr="#494949",GradientType=1)
+  table
+    opacity: .97
+  h1
+    padding-top: 50px
+    padding-bottom: 20px
+  h2
+    padding-bottom: 20px
+  h1,h2
+    text-align: center
+  .haircut
+    padding-top: 20px
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link
+    background-color: rgb(249, 200, 105)
+    color: #000
+  a
+    color: #F9C869
+  .table-dark 
+    th
+      text-align: center
+  .nav.nav-pills
+    flex-direction: column
+  .hamburger
+    padding-top: 0px
+  .header .top-line 
+    padding-top: 7px
+  span.logo-font.pl-2
+    font-size: 22px
+    display: block
+    padding-bottom: 10px
+    color: #fff
+  a
+    text-decoration: none
+  span.logo-font.pl-2:hover
+    color: #F9C869
+    transition: color .25s ease
+  .header-contacts > .container
+    padding-left: 55px
+  
 @import "media" // Всегда в конце

@@ -75,7 +75,8 @@
           left: 0px
         &.owl-next
           right: 0px
-
+  .s-call::before
+    width: 100%
   .footer__menu
     padding-left: 23px
   .footer__social
@@ -83,7 +84,12 @@
     a
       margin-top: 0
 
+
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 576px)
+  .price-page .nav.nav-pills
+    flex-direction: row
+    
 @media only screen and (max-width : 480px)
   .header
     &__text

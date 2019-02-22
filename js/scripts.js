@@ -127,3 +127,15 @@ $(window).on('load', function(){
   $('.preloader').delay(1000).fadeOut('slow');
 })
 });
+
+
+
+
+
+$('#myModal').on('shown.bs.modal', function () {
+  // $('#myInput').trigger('focus')
+})
+
+  // $(document).ready(function() {
+  //   $("#myModalBox").modal('show');
+  // });

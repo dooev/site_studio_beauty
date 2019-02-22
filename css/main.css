@@ -645,6 +645,16 @@ html.mm-opened {
           flex-direction: column;
 }
 
+.services .logo-font {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
+.services .accent {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
 .services .owl-nav {
   position: absolute;
   top: 0;
@@ -1296,6 +1306,84 @@ select {
   }
 }
 
+.price-page header {
+  height: auto;
+  background-color: #494949;
+  background: -webkit-gradient(linear, left top, right top, from(#494949), color-stop(50%, black), to(#494949));
+  background: linear-gradient(90deg, #494949 0%, black 50%, #494949 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#494949",endColorstr="#494949",GradientType=1);
+}
+
+.price-page table {
+  opacity: .97;
+}
+
+.price-page h1 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.price-page h2 {
+  padding-bottom: 20px;
+}
+
+.price-page h1, .price-page h2 {
+  text-align: center;
+}
+
+.price-page .haircut {
+  padding-top: 20px;
+}
+
+.price-page .nav-pills .nav-link.active, .price-page .nav-pills .show > .nav-link {
+  background-color: #f9c869;
+  color: #000;
+}
+
+.price-page a {
+  color: #F9C869;
+}
+
+.price-page .table-dark th {
+  text-align: center;
+}
+
+.price-page .nav.nav-pills {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.price-page .hamburger {
+  padding-top: 0px;
+}
+
+.price-page .header .top-line {
+  padding-top: 7px;
+}
+
+.price-page span.logo-font.pl-2 {
+  font-size: 22px;
+  display: block;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.price-page a {
+  text-decoration: none;
+}
+
+.price-page span.logo-font.pl-2:hover {
+  color: #F9C869;
+  -webkit-transition: color .25s ease;
+  transition: color .25s ease;
+}
+
+.price-page .header-contacts > .container {
+  padding-left: 55px;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1378,6 +1466,9 @@ select {
   .partners .owl-nav > div.owl-next {
     right: 0px;
   }
+  .s-call::before {
+    width: 100%;
+  }
   .footer__menu {
     padding-left: 23px;
   }
@@ -1390,6 +1481,15 @@ select {
 }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+  .price-page .nav.nav-pills {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .header__text-composition {
     margin-top: 5px;
